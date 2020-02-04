@@ -19,9 +19,9 @@ class ProviderState extends State<ProviderActivity> {
                 button("Simple Provider", () {
                   Navigator.of(context).pushNamed(linkSimpleProvider);
                 }),
-//                button("Reusable", () {
-//                  Navigator.of(context).pushNamed(linkProvider);
-//                }),
+                button("Reusable", () {
+                  Navigator.of(context).pushNamed(linkReusableProvider);
+                }),
               ],
             )));
   }

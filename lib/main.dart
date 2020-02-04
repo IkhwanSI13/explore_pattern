@@ -1,6 +1,7 @@
 import 'package:explore_pattern/mainActivity.dart';
 import 'package:explore_pattern/page_route.dart';
 import 'package:explore_pattern/provider/ProviderActivity.dart';
+import 'package:explore_pattern/provider/reusable/ReusableProviderActivity.dart';
 import 'package:explore_pattern/provider/simple/SimpleProviderActivity.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,8 @@ class MyApp extends StatelessWidget {
         return CustomPageRoute(page: ProviderActivity());
       case linkSimpleProvider:
         return CustomPageRoute(page: SimpleProviderActivity());
+      case linkReusableProvider:
+        return CustomPageRoute(page: ReusableProviderActivity());
     }
   }
 }

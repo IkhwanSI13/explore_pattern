@@ -1,4 +1,5 @@
 import 'package:explore_pattern/page_route.dart';
+import 'package:explore_pattern/utils.dart';
 import 'package:flutter/material.dart';
 
 class MainActivity extends StatefulWidget {
@@ -16,36 +17,14 @@ class MainState extends State<MainActivity> {
             body: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                button("Provider", () {
+                Utils().button("Provider", () {
                   Navigator.of(context).pushNamed(linkProvider);
                 }),
-                button("BLOC", () {
+                Utils().button("BLOC", () {
                   Navigator.of(context).pushNamed(linkBloc);
                 }),
               ],
             )));
-  }
-
-  Widget button(String text, Function onClick) {
-    return Container(
-      margin: EdgeInsets.only(left: 24, right: 24, top: 24),
-      child: Material(
-        borderRadius: BorderRadius.circular(8.0),
-        color: Color(0xfff6f7eb),
-        child: InkWell(
-          onTap: () {
-            onClick();
-          },
-          child: Container(
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8.0),
-                border: Border.all(color: Color(0xff323031))),
-            padding: EdgeInsets.fromLTRB(12.0, 18.0, 12.0, 18.0),
-            child: Text(text),
-          ),
-        ),
-      ),
-    );
   }
 
 //    Navigator.of(context).pushNamed(linkTopicList,
