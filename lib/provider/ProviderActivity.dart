@@ -25,6 +25,9 @@ class ProviderState extends State<ProviderActivity> {
                 button("Multi Provider", () {
                   Navigator.of(context).pushNamed(linkMultiProvider);
                 }),
+                button("Consumer", () {
+                  Navigator.of(context).pushNamed(linkConsumer);
+                }),
               ],
             )));
   }

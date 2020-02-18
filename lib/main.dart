@@ -1,6 +1,7 @@
 import 'package:explore_pattern/mainActivity.dart';
 import 'package:explore_pattern/page_route.dart';
 import 'package:explore_pattern/provider/ProviderActivity.dart';
+import 'package:explore_pattern/provider/consumer_selector/ConsumerActivity.dart';
 import 'package:explore_pattern/provider/multi/MultiProviderActivity.dart';
 import 'package:explore_pattern/provider/reusable/ReusableProviderActivity.dart';
 import 'package:explore_pattern/provider/simple/SimpleProviderActivity.dart';
@@ -32,6 +33,8 @@ class MyApp extends StatelessWidget {
         return CustomPageRoute(page: ReusableProviderActivity());
       case linkMultiProvider:
         return CustomPageRoute(page: MultiProviderActivity());
+      case linkConsumer:
+        return CustomPageRoute(page: ConsumerActivity());
     }
   }
 }

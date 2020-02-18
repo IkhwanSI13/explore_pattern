@@ -6,6 +6,7 @@ const linkProvider = "/Provider";
 const linkSimpleProvider = "/SimpleProvider";
 const linkReusableProvider = "/ReusableProvider";
 const linkMultiProvider = "/MultiProvider";
+const linkConsumer = "/Consumer";
 
 class CustomPageRoute extends PageRouteBuilder {
   final Widget page;
