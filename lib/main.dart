@@ -1,3 +1,4 @@
+import 'package:explore_pattern/bloc/BlocActivity.dart';
 import 'package:explore_pattern/mainActivity.dart';
 import 'package:explore_pattern/page_route.dart';
 import 'package:explore_pattern/provider/ProviderActivity.dart';
@@ -35,6 +36,8 @@ class MyApp extends StatelessWidget {
         return CustomPageRoute(page: MultiProviderActivity());
       case linkConsumer:
         return CustomPageRoute(page: ConsumerActivity());
+      case linkBloc:
+        return CustomPageRoute(page: BlocActivity());
     }
   }
 }
