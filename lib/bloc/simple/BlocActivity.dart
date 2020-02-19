@@ -1,5 +1,4 @@
-import 'package:explore_pattern/bloc/bloc.dart';
-import 'package:explore_pattern/bloc/provider.dart';
+import 'package:explore_pattern/bloc/simple/Bloc.dart';
 import 'package:flutter/material.dart';
 
 class BlocActivity extends StatelessWidget {
@@ -7,7 +6,6 @@ class BlocActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     print("CheckLog | BlocActivity | build method run");
 
-//    final bloc = Provider.of(context);
     final bloc = Bloc();
     return Scaffold(
       appBar: AppBar(

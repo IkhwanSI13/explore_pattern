@@ -3,7 +3,8 @@ import 'dart:async';
 class Bloc {
   int counter = 0;
 
-  StreamController<int> _counterController = new StreamController<int>.broadcast();
+  StreamController<int> _counterController =
+      new StreamController<int>.broadcast();
 
   Function(int) get addCounter => _counterController.sink.add;
 

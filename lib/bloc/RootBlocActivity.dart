@@ -2,12 +2,12 @@ import 'package:explore_pattern/page_route.dart';
 import 'package:explore_pattern/utils.dart';
 import 'package:flutter/material.dart';
 
-class MainActivity extends StatefulWidget {
+class RootBlocActivity extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => new MainState();
+  State<StatefulWidget> createState() => new BlocState();
 }
 
-class MainState extends State<MainActivity> {
+class BlocState extends State<RootBlocActivity> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -17,16 +17,13 @@ class MainState extends State<MainActivity> {
             body: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Utils().button("Provider", () {
-                  Navigator.of(context).pushNamed(linkProvider);
+                Utils().button("Simple Bloc", () {
+                  Navigator.of(context).pushNamed(linkBloc);
                 }),
-                Utils().button("BLOC", () {
-                  Navigator.of(context).pushNamed(linkBlocRoot);
+                Utils().button("Bloc with library", () {
+                  Navigator.of(context).pushNamed(linkBloc2);
                 }),
               ],
             )));
   }
-
-//    Navigator.of(context).pushNamed(linkTopicList,
-//        arguments: {param1: idTopic, param2: nameTopic});
 }
